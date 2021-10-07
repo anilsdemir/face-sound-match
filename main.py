@@ -30,6 +30,7 @@ while True:
         print('\nDone')
 
     cv2.imshow("Processing", frame_draw)
+    cv2.rectangle(frame, (10, 20), (20, 30))
 
     if cv2.waitKey(1) & 0XFF == ord("q"):
         break
